@@ -1,6 +1,11 @@
-# lottery秒数
+# lottery描述
+
 一个抽奖的小程序
-用了JQuery Canvas PHP简化版Server端(省去了数据库等部分) 主要展现前端功能
+
+用了JQuery Canvas PHP简化版Server端(省去了数据库等部分) 
+
+主要展现前端功能
+
 实现多语言展示 适配移动端
 
 ### 英文图
