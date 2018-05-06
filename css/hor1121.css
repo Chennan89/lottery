@@ -1,0 +1,150 @@
+body{overflow-x:hidden;width:100%;/* background:url(../images/BG.png) #490708;background-position:45% 45px;background-size:103%;background-repeat:no-repeat; */color:#FFF;font-family:黑体;font-weight:bold;}
+/*body{width:100%;background:url(../images/BG.jpg) #490708;background-position:45% 45px;background-size:105%;background-repeat:no-repeat;color:#FFF;font-family:黑体;font-weight:bold;}*/
+/*body{width:100%;background:url(../images/BG.png) #490708;background-position:45% -18%;background-size:105%;background-repeat:no-repeat;color:#FFF;font-family:黑体;font-weight:bold;}
+ */
+ /*@media screen and (min-width:500px){*//* 宽屏 */
+    #canvasBGHor{background:black;display:none;position:absolute;z-index:-90;top:72px;left:0;width:100%;height:100%;}
+    #canvasBG{display:none;}
+    #spinArea{width:42%;position:absolute;left:29%;}
+    /*#spinBackground{position:absolute;z-index:-89;left:0;width:100%;height:100%;background:url(../images/BG.jpg);background-position:45% 0%;background-size:105%;background-repeat:no-repeat;}
+    */
+    .bg{width:100%;z-index:-1;position:absolute;}
+    #background{width:100%;/* margin-top:-10px; */}
+    /* #rotBG{width:100%;position:absolute;top:10px;} */
+    /* #rotBG{width:46%;position:absolute;top:50px;left:5px;} */
+    /* #canvas1{display:block;position:absolute;top:45px;left:0px;z-index:100;}
+    #canvas2{display:block;position:absolute;top:55px;left:230px;z-index:100;transform: rotate(210deg);} */
+    #canvas1{width:45%;display:block;position:absolute;top:10.5%;left:1%;z-index:100;/* width:100%;height:350px; */}
+    #canvas2{width:45%;display:block;position:absolute;top:10.5%;left:54%;z-index:100;/* transform: rotate(210deg); *//* width:100%;height:350px; */}
+    #canvas3, #canvas4{display:none;}
+
+    .turntable-bg{position:relative;width:86%;/* left:1%; */margin:0 auto; /* height:100px; */padding-top:7%;}
+    .turntable-ele{position:relative;width:30%;margin:0 auto;}
+    /*.turntable-bg .rotate{position:absolute;width:85%;left:6.8%;}*/
+    #rotate{width:100%;position:absolute;}
+    /* #rotate2, #rotate1{width:86%;left:7%;top:7%;position:absolute;} */
+    #rotate1{width:100%;/* margin-left:6.5%;margin-top:4.2%; */}
+    #rotate2{width:100%;position:absolute;top:0;left:0;/*left:6.5%; */}
+    .turntable-ele .arrow{width:62%;z-index:7;left:19%;padding-top:12%;position:absolute;}/* 25%是50的一半 */
+    .turntable-ele .pointer{position:absolute;width:40%;margin-left:30%;/* margin-top:85px; */padding-top:65%;}/* 25%是50的一半 */
+    .pointerMask{width:58%;top:67%;left:21%;height:23%;border-radius:58%;position:absolute;background:rgba(255,255,255,0);}
+
+
+    /*左侧个人信息区域开始*/
+    #info{width:19%;border:2px solid #8E0107;position:absolute;/* margin-top:15%; */margin-top:70px;font-size:0.8em;padding:8px 2px;margin-left:2px;}
+    #info article{border:none;display:inline-block;width:100%;height:auto;margin-top:0px;padding:0;margin-left:0;z-index:-1;}
+    #figure{width:40%;display:block;margin:0 auto;}
+    #name{display:block;text-align:center;line-height:25px;}
+    #ticketLeft{display:block;text-align:center;line-height:25px;}
+    /*左侧个人信息区域结束*/
+
+     /*左侧简介区域开始*/
+    #intro{width:18%;max-height:150px;overflow:scroll;border:2px solid #8E0107;position:absolute;/* margin-top:15%; *//*top:35%;*/margin-top:70px;font-size:1em;padding:6px;right:1%;}
+    #title{display:block;text-align:left;line-height:40px;}
+    #introduction{display:block;text-align:left;line-height:25px;}
+    /*左侧简介区域结束*/
+
+    .btns{position:absolute;width:90%;padding-top:42%;/* margin-top:290px; */padding-bottom:10px;left:5%;display:block;}
+    .btns2{display:none;}
+
+    #intro .btns, #intro .btns #showRules, #intro .btns #AwardHistory{display:none;}
+    .btns button{overflow:hidden;width:32%;height:30px;color:#FFF;font-weight:bold;background:linear-gradient(#FA807E,#DB2726,#B40000)!important;background:red;border:1px solid #FEC5C4;box-shadow:inset 0 0 0 1px #B70000, 0 0 0 1px #B70000;font-size:1.2em;outline:none;margin-left:70%;}
+    .btns button:first-child{margin-right:48%;}
+/*}*/
+#spinArea{/* margin-top:38px; */padding-top:5%;/* margin-top:calc(45px + 4%); */}
+#roatBG{z-index:-1;position:absolute;width:185%;left:-42%;top:13%;display:none;}
+
+.turntable-ele .pointer img, .turntable-ele .arrow img{width:100%;}
+.turntable-ele .pointer img{margin-top:0;}
+#yellow{color:#FFF337;font-size:2em;font-weight:bold;}
+#awardInform .yellow{color:#FFF337;font-size:1.3em;font-weight:bold;display:inline-block;}
+.turntable-ele .mask {
+  width: 454px;
+  height: 451px;
+  position: absolute;
+  left: 116px;
+  top: 60px;
+  /*z-index:9;*/
+}
+.turntable-ele .pointer {
+  z-index: 8;
+}
+#roatBG{z-index:-1;position:absolute;width:185%;left:-42%;top:13%;display:none;}
+
+#mask{width:100%;position:absolute;left:0;top:0;background-color: rgba(0,0,0,0.8);z-index:10;display:none;}
+#header{width:100%;text-align:center;background:#6D0B0B;}
+/* #header img{width:50%;height:40px;margin-top:5px;margin-bottom:-2px;} */
+#titleBG{width:50%;height:40px;margin-top:5px;margin-bottom:-2px;}
+#header .title{position:absolute;font-size:1.5em;height:40px;width:50%;left:25%;top:15px;}
+
+/*-----------------------抽獎規則彈出窗部分-------------------------*/
+#popup{font-family:黑体;font-weight:normal;z-index:99;border:2px solid #C00404;width:70%;position:absolute;left:15%;text-align:center;font-size:1.5em;display:none;}
+#close{/* color:#4F0707; */font-size:1em;position:absolute;top:10px;right:6px;}
+#close::before{content: "\2716";color:#FFF;}
+
+#popup header{display:block;background:#6D0B0B;border-bottom:2px solid #C00404;}
+#popup header img{width:50%;height:40px;margin-top:5px;margin-bottom:-5px;}
+#popup header .title{position:absolute;z-index:15;font-size:1em;height:40px;width:40%;left:30%;top:14px;}
+
+#outerArticle{overflow:scroll;padding:5px 0.5em;font-size:0.8em;text-align:left;min-height:200px;max-height:600px;background:transparent;}
+#outerArticle title{display:block;text-align:left;line-height:1.2em;font-size:0.8em;}
+#outerArticle article{display:block;text-indent:2em;line-height:1.2em;font-size:0.8em;}
+/*------------------------抽獎規則彈出窗部分------------------------*/
+
+/*------------------------已獲得獎品彈出窗部分------------------------*/
+#awardPop{z-index:99;border:2px solid #C00404;width:80%;position:absolute;left:10%;text-align:center;display:none;}
+#awardPop header{display:block;background:#6D0B0B;border-bottom:2px solid #C00404;}
+#awardPop header img{width:40%;height:40px;margin-top:3px;margin-bottom:-3px;}
+#awardPop header .title{position:absolute;z-index:15;font-size:1.5em;height:40px;width:40%;left:30%;top:12px;}
+#awardArticle{overflow:scroll;font-size:1em;text-align:left;min-height:70px;max-height:250px;background:transparent;}
+
+table{width:99.9%;font-weight:bold;background:transparent;display:table;z-index:999;font-size:1em;color:#FFF;font-weight:bold;}
+tbody, tr{width:100%;}
+table td, table th{width:30%;text-align:center;height:35px;}
+table td:nth-child(1),table th:nth-child(1){width:40%;}
+table td:nth-child(2),table th:nth-child(2){width:40%;}
+table td:nth-child(3),table th:nth-child(3){width:20%;}
+/* table td:nth-child(4),table th:nth-child(4){width:20%;} */
+table td a{width:100%;display:block;text-decoration:none;}
+.got{color:#0F8435;font-weight:bold;}
+.notgot{color:#BE9B11;font-weight:bold;}
+/*------------------------已獲得獎品彈出窗部分------------------------*/
+
+/*------------------------提示獲得獎品彈出窗部分------------------------*/
+#sucPop,#informPop{margin-top:20px;background:#6D0B0B;z-index:99;border:2px solid #C00404;width:70%;color:#FFF;position:absolute;left:15%;text-align:center;display:none;}
+#sucPop header,#informPop header{display:block;height:40px;}
+
+#informArticle{padding:0px 20px 40px;text-align:center;font-size:1em;}
+#informArticle span{display:block;line-height:2.5em;}
+
+.ret{color:#FFF;font-size:1.5em;position:absolute;top:4px;right:6px;}
+.ret{border-radius:1em;line-height:2em;text-align: center;height: 2em;width: 2em;padding: 1px;}
+/* use cross as close button */
+.ret::before{content: "\2716";}
+/* place the button on top-right */
+.ret{top: -2px;right: -10px;position: absolute;}
+
+#sucArticle{display:none;padding:5px 20px 40px;text-align:center;font-size:1em;}
+#sucArticle span{display:block;line-height:2em;}
+
+#pwdArticle{display:none;padding:5px 10px 30px;text-align:center;font-size:1em;}
+#pwdArticle span{line-height:2.5em;}
+#cardNo, #cardPwd{background:#410404;padding:8px 15px;}
+#pwdArticle .small{font-size:1em;text-align:left;line-height:3em;}
+/*------------------------提示獲得獎品彈出窗部分------------------------*/
+
+.ret, #close{/* color:#4F0707; */color:#FFF;}
+#cong{width:60%;left:20%;position:absolute;z-index:99;top:20px;display:none;}
+#awardInform{width:80%;left:10%;display:none;font-size:1.3em;text-align:center;position:absolute;z-index:99;/* margin-top:170px; */margin-top:28%;line-height:2em;}
+#awardInform span{display:block;}
+#awardInform #yellow{display:inline-block;}
+#awardInform button{font-size:1.3em;text-align:center;color:#FFF;font-weight:bold;width:50%;margin-left:5%;height:1.5em;line-height:1.5em;background:#317707;background:linear-gradient(#AEE569,#6BAE29,#317707);border:1px solid #7CB61B;border-radius:1em;margin-top:15px;}
+
+#wholeBack{position:absolute;margin-top:-110px;left:0;z-index:-99;/* background:url(../images/POKER_BG.jpg);background-size:14%;background-position:-0.8% -1%;background-repeat:repeat;opacity:0.1; */}
+
+
+#leftDeng{position:absolute;top:9%;left:0;width:48%;transform: translateZ(0);}
+#rightDeng{transform: translateZ(0);-moz-transform:scaleX(-1);-webkit-transform:scaleX(-1);-o-transform:scaleX(-1);transform:scaleX(-1);/*IE*/filter:FlipH;transform: rotateY(180deg);/*only for webkit*/
+position:absolute;top:9%;left:52%;width:48%;}
+
+#wareImg{/* width:10%;margin:0 10px; */width:8%;margin-bottom:-2%;}
